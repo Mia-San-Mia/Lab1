@@ -22,6 +22,7 @@ public class Graph {
 			System.out.println("IO Exception!");
 		}
 		
+
 		Runtime run = Runtime.getRuntime();
 		try {
 			Process process = run.exec(String.format("dot -Tpng %s -o %s", fileName.replace("txt", "dot"), fileName.replace("txt", "png")));
