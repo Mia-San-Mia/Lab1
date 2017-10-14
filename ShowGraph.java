@@ -1,4 +1,4 @@
-import java.awt.*;
+﻿import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import javax.imageio.ImageIO;
@@ -15,6 +15,7 @@ public class ShowGraph extends JFrame{
 		setTitle("Show Graph");
 		setSize(WIDTH, HEIGHT);
 		// 菜单
+		//这是更改
 		JMenuBar meunBar = new JMenuBar();
 		JMenu menu = new JMenu("Menu");
 		JMenuItem showGraph = new JMenuItem("Show Graph");

@@ -12,6 +12,7 @@ class MyGraph {
     }
     
     private void resetShortestArray() {
+	//ÕâÊÇ×¢ÊÍ
     	for (int i = 0; i < word.length; i++) {
 			for (int j = 0; j < word.length; j++) {
                 shortestPath[i][j] = 0;
