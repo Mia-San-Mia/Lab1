@@ -14,8 +14,7 @@ public class ShowGraph extends JFrame{
 		setBackground(Color.WHITE);
 		setTitle("Show Graph");
 		setSize(WIDTH, HEIGHT);
-		// 菜单
-		//这是更改xcv
+
 		JMenuBar meunBar = new JMenuBar();
 		JMenu menu = new JMenu("Menu");
 		JMenuItem showGraph = new JMenuItem("Show Graph");
