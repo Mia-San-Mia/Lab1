@@ -22,7 +22,7 @@ public class Graph {
 			System.out.println("IO Exception!");
 		}
 		
-		//生成并展示图片
+		//生成并展示图片...
 		//这是更改
 		Runtime run = Runtime.getRuntime();
 		try {
