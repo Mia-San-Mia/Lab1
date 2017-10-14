@@ -23,7 +23,7 @@ public class Graph {
 		}
 		
 		//生成并展示图片
-		//这是更改
+		//这是更改??
 		Runtime run = Runtime.getRuntime();
 		try {
 			Process process = run.exec(String.format("dot -Tpng %s -o %s", fileName.replace("txt", "dot"), fileName.replace("txt", "png")));
