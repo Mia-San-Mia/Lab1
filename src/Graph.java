@@ -22,7 +22,7 @@ public class Graph {
 			System.out.println("IO Exception!");
 		}
 		
-		//生成并展示图片jjk
+		//生成并展示图片
 		Runtime run = Runtime.getRuntime();
 		try {
 			Process process = run.exec(String.format("dot -Tpng %s -o %s", fileName.replace("txt", "dot"), fileName.replace("txt", "png")));
