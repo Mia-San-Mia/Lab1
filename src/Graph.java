@@ -2,6 +2,7 @@ import java.io.*;
 /*change two*/
 
 public class Graph {
+	/*edit on branch B2*/
 	public static void createDirectedGraph(String[] word, int[][] arr, String fileName) {
 		File dotFile = new File(fileName.replace("txt", "dot"));
 		try {

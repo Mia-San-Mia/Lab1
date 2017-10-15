@@ -4,8 +4,9 @@ import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 /*change three*/
-public class ShowGraph extends JFrame{
 
+public class ShowGraph extends JFrame{
+	/*edit on branch B2*/
 	PutGraphPanel putGraph;
 	
 	public ShowGraph(MyGraph mygraph, String fileName) {		

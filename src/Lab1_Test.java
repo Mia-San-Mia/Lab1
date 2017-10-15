@@ -5,12 +5,13 @@ import java.util.Random;
 import java.util.Scanner;
 import static java.lang.System.exit;
 /*change one*/
+
 class MyGraph {
     MyGraph(String path) {
         read(path);
         getDistance();
     }
-    
+    /*edit on branch B2*/    
     void resetShortestArray() {
     	for (int i = 0; i < word.length; i++) {
 			for (int j = 0; j < word.length; j++) {
