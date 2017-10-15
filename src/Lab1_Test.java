@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 import static java.lang.System.exit;
-
+/*change one*/
 class MyGraph {
     MyGraph(String path) {
         read(path);
