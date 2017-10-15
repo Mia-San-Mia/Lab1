@@ -1,10 +1,10 @@
-import java.io.*;
+﻿import java.io.*;
 /*change two*/
 
 public class Graph {
 	public static void createDirectedGraph(String[] word, int[][] arr, String fileName) {
 		File dotFile = new File(fileName.replace("txt", "dot"));
-		try {
+		try {//hahaha
 			dotFile.createNewFile();
 			BufferedWriter out = new BufferedWriter(new FileWriter(dotFile));
 			out.write(String.format("digraph %s {\n", "test"));

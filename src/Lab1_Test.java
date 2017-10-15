@@ -8,7 +8,7 @@ import static java.lang.System.exit;
 class MyGraph {
     MyGraph(String path) {
         read(path);
-        getDistance();
+        getDistance();//hahaha
     }
     
     void resetShortestArray() {

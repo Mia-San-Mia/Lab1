@@ -1,4 +1,4 @@
-import java.awt.*;
+﻿import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import javax.imageio.ImageIO;
@@ -6,7 +6,7 @@ import javax.swing.*;
 /*change three*/
 public class ShowGraph extends JFrame{
 
-	PutGraphPanel putGraph;
+	PutGraphPanel putGraph;//hahah
 	
 	public ShowGraph(MyGraph mygraph, String fileName) {		
 		final int WIDTH = 900;
