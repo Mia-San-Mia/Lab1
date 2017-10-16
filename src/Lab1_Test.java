@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 import static java.lang.System.exit;
 /*change one*/
+/*new change*/
 
 class MyGraph {
     MyGraph(String path) {
