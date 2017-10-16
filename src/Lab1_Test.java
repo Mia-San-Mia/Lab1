@@ -10,7 +10,7 @@ import static java.lang.System.exit;
 class MyGraph {
     MyGraph(String path) {
         read(path);
-        getDistance();
+        getDistance();//haha
     }
     /*edit on branch B2*/    
     void resetShortestArray() {

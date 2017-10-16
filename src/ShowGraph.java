@@ -1,4 +1,4 @@
-import java.awt.*;
+﻿import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import javax.imageio.ImageIO;
@@ -10,7 +10,7 @@ import javax.swing.*;
 
 public class ShowGraph extends JFrame{
 	/*edit on branch B2*/
-	PutGraphPanel putGraph;
+	PutGraphPanel putGraph;//hahah
 	
 	public ShowGraph(MyGraph mygraph, String fileName) {		
 		final int WIDTH = 900;
@@ -18,7 +18,7 @@ public class ShowGraph extends JFrame{
 		setBackground(Color.WHITE);
 		setTitle("Show Graph");
 		setSize(WIDTH, HEIGHT);
-		// 菜单
+		// 菜单kh
 		JMenuBar meunBar = new JMenuBar();
 		JMenu menu = new JMenu("Menu");
 		JMenuItem showGraph = new JMenuItem("Show Graph");

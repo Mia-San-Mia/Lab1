@@ -1,4 +1,4 @@
-import java.io.*;
+﻿import java.io.*;
 /*change two*/
 /*edit on branch B1*/
 /*new change*/
@@ -6,7 +6,7 @@ public class Graph {
 	/*edit on branch B2*/
 	public static void createDirectedGraph(String[] word, int[][] arr, String fileName) {
 		File dotFile = new File(fileName.replace("txt", "dot"));
-		try {
+		try {//hahaha
 			dotFile.createNewFile();
 			BufferedWriter out = new BufferedWriter(new FileWriter(dotFile));
 			out.write(String.format("digraph %s {\n", "test"));
