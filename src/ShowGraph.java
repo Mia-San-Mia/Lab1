@@ -6,6 +6,10 @@ import javax.swing.*;
 /*change three*/
 public class ShowGraph extends JFrame{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	PutGraphPanel putGraph;
 	
 	public ShowGraph(MyGraph mygraph, String fileName) {		
@@ -14,7 +18,7 @@ public class ShowGraph extends JFrame{
 		setBackground(Color.WHITE);
 		setTitle("Show Graph");
 		setSize(WIDTH, HEIGHT);
-		// 菜单
+		// 鑿滃崟
 		JMenuBar meunBar = new JMenuBar();
 		JMenu menu = new JMenu("Menu");
 		JMenuItem showGraph = new JMenuItem("Show Graph");
@@ -32,7 +36,7 @@ public class ShowGraph extends JFrame{
 				}
 		});
 		meunBar.add(menu);
-		// 添加菜单到主程序
+		// 娣诲姞鑿滃崟鍒颁富绋嬪簭
 		setJMenuBar(meunBar);
 		
 		PutGraphPanel putGraph = new PutGraphPanel();
@@ -46,6 +50,10 @@ public class ShowGraph extends JFrame{
 
 
 class PutGraphPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static JLabel graphLabel;
 	public static ImageIcon graph;
 	public PutGraphPanel(){
@@ -60,7 +68,7 @@ class PutGraphPanel extends JPanel {
 			graphLabel.setIcon(graph);
 			graphLabel.repaint();
 		} catch (IOException e) {
-			// TODO 自动生成的 catch 块
+			// TODO 鑷姩鐢熸垚鐨� catch 鍧�
 			System.out.println("Show Graph Error!");
 		}
 	}
