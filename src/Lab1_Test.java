@@ -9,8 +9,7 @@ class MyGraph {
     MyGraph(String path) {
         read(path);
         getDistance();
-    }
-    
+    } 
     void resetShortestArray() {
     	for (int i = 0; i < word.length; i++) {
 			for (int j = 0; j < word.length; j++) {
