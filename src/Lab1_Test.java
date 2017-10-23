@@ -6,18 +6,19 @@ import java.util.Scanner;
 import static java.lang.System.exit;
 /*change one*/
 class MyGraph {
-  MyGraph(String path) {
-    read(path);
-    getDistance();
-  }
-    
-  void resetShortestArray() {
-    for (int i = 0; i < word.length; i++) {
-      for (int j = 0; j < word.length; j++) {
-        shortestPath[i][j] = 0;
-      }
+    MyGraph(String path) {
+        read(path);
+        getDistance();
+    } 
+    void resetShortestArray() {
+    	for (int i = 0; i < word.length; i++) {
+			for (int j = 0; j < word.length; j++) {
+				shortestPath[i][j] = 0;
+				
+			}
+			
+		}
     }
-  }
 
   private void translate(List<String> list) {
     List<String> unilist = new ArrayList<String>();
