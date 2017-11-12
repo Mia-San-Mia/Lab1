@@ -111,6 +111,7 @@ class MyGraph {
       for (String s : oldWord) {
         newWord.add(s);
       }
+
     } else {
       Random r = new Random();
       for (int i = 0; i < l - 1; i++) {
