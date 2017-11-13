@@ -1,4 +1,5 @@
 import java.io.*;
+import java.time.format.FormatStyle;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -14,9 +15,7 @@ class MyGraph {
     	for (int i = 0; i < word.length; i++) {
 			for (int j = 0; j < word.length; j++) {
 				shortestPath[i][j] = 0;
-				
 			}
-			
 		}
     }
 
@@ -158,6 +157,8 @@ class MyGraph {
 
   public String[] calcShortestPath(String word1, String word2) {
     exist(word1, word2);
+    if (f1 == -1 || f2 == -1)
+    	return null;
     resetShortestArray();
     int k, count, result[];
     result = new int[v];
