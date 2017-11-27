@@ -1,15 +1,11 @@
-import java.awt.*;
+﻿import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
-/*change three*/
+
 public class ShowGraph extends JFrame{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	PutGraphPanel putGraph;
 	
 	public ShowGraph(MyGraph mygraph, String fileName) {		
@@ -18,7 +14,8 @@ public class ShowGraph extends JFrame{
 		setBackground(Color.WHITE);
 		setTitle("Show Graph");
 		setSize(WIDTH, HEIGHT);
-		// 鑿滃崟
+		// 菜单
+		//这是更改
 		JMenuBar meunBar = new JMenuBar();
 		JMenu menu = new JMenu("Menu");
 		JMenuItem showGraph = new JMenuItem("Show Graph");
@@ -36,7 +33,7 @@ public class ShowGraph extends JFrame{
 				}
 		});
 		meunBar.add(menu);
-		// 娣诲姞鑿滃崟鍒颁富绋嬪簭
+		// 添加菜单到主程序
 		setJMenuBar(meunBar);
 		
 		PutGraphPanel putGraph = new PutGraphPanel();
@@ -50,12 +47,11 @@ public class ShowGraph extends JFrame{
 
 
 class PutGraphPanel extends JPanel {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	public static JLabel graphLabel;
+	//public static int WIDTH;
+	//public static int HEIGHT;
 	public static ImageIcon graph;
+	//int percent = 100;
 	public PutGraphPanel(){
 		graphLabel = new JLabel();
 		setBackground(Color.WHITE);
@@ -65,10 +61,12 @@ class PutGraphPanel extends JPanel {
 	public static void setgraph(String pngPath) {
 		try {
 			graph = new ImageIcon(ImageIO.read(new File(pngPath)));
+			//WIDTH = graph.getIconWidth();
+			//HEIGHT = graph.getIconHeight();
 			graphLabel.setIcon(graph);
 			graphLabel.repaint();
 		} catch (IOException e) {
-			// TODO 鑷姩鐢熸垚鐨� catch 鍧�
+			// TODO 自动生成的 catch 块
 			System.out.println("Show Graph Error!");
 		}
 	}
